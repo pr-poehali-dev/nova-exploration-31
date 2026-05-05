@@ -50,12 +50,20 @@ export default function LandingPage() {
           <span className="text-[#FFD700]">.</span>
           <span className="text-[#FFD700] font-light">энергосети</span>
         </span>
-        <div className="hidden md:flex items-center gap-6 text-sm text-neutral-300">
-          <a href="tel:89375551144" className="hover:text-[#FFD700] transition-colors">
-            8-937-555-11-44
-          </a>
-          <a href="mailto:ftkm@mail.ru" className="hover:text-[#FFD700] transition-colors">
-            ftkm@mail.ru
+        <div className="flex items-center gap-4 md:gap-6">
+          <div className="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+            <a href="tel:89375551144" className="hover:text-[#FFD700] transition-colors">
+              8-937-555-11-44
+            </a>
+            <a href="mailto:ftkm@mail.ru" className="hover:text-[#FFD700] transition-colors">
+              ftkm@mail.ru
+            </a>
+          </div>
+          <a
+            href="tel:89375551144"
+            className="md:hidden text-sm font-semibold text-black bg-[#FFD700] px-4 py-2 rounded-md shadow-[0_0_14px_rgba(255,215,0,0.4)] hover:bg-[#FFA500] transition-colors"
+          >
+            Заявка
           </a>
         </div>
       </div>
