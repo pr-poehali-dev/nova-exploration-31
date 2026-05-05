@@ -43,6 +43,15 @@ export default function LandingPage() {
 
   return (
     <Layout>
+      {/* Логотип */}
+      <div className="fixed top-0 left-0 z-30 p-6 md:p-8">
+        <span className="text-white font-bold text-lg md:text-xl tracking-wide">
+          АТЛАС
+          <span className="text-[#FFD700]">.</span>
+          <span className="text-[#FFD700] font-light">энергосети</span>
+        </span>
+      </div>
+
       <nav className="fixed top-0 right-0 h-screen flex flex-col justify-center z-30 p-4">
         {sections.map((section, index) => (
           <button
