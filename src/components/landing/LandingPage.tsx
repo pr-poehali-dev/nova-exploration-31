@@ -43,13 +43,21 @@ export default function LandingPage() {
 
   return (
     <Layout>
-      {/* Логотип */}
-      <div className="fixed top-0 left-0 z-30 p-6 md:p-8">
+      {/* Шапка */}
+      <div className="fixed top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-8 py-5">
         <span className="text-white font-bold text-lg md:text-xl tracking-wide">
           АТЛАС
           <span className="text-[#FFD700]">.</span>
           <span className="text-[#FFD700] font-light">энергосети</span>
         </span>
+        <div className="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+          <a href="tel:89375551144" className="hover:text-[#FFD700] transition-colors">
+            8-937-555-11-44
+          </a>
+          <a href="mailto:ftkm@mail.ru" className="hover:text-[#FFD700] transition-colors">
+            ftkm@mail.ru
+          </a>
+        </div>
       </div>
 
       <nav className="fixed top-0 right-0 h-screen flex flex-col justify-center z-30 p-4">
