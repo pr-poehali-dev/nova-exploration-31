@@ -68,6 +68,11 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             variant="outline"
             size="lg"
             className="relative text-black bg-[#FFD700] border-[#FFD700] hover:bg-[#FFA500] hover:border-[#FFA500] transition-all font-semibold shadow-[0_0_20px_rgba(255,215,0,0.4)] hover:shadow-[0_0_30px_rgba(255,165,0,0.6)]"
+            onClick={() => {
+              if (id === 'contact') {
+                window.location.href = 'mailto:ftkm@mail.ru?subject=Заявка%20с%20сайта&body=Добрый%20день!%20Хочу%20обсудить%20проект.';
+              }
+            }}
           >
             {buttonText}
           </Button>
